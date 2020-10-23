@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <?php include "includes/heading.php"; ?>
-    <title>PHP practice</title>
+    <title>Online Gallery</title>
 </head>
 <body>
     <header>
@@ -10,6 +10,9 @@
     </header>
     
     <main>
+        <section class = "gallery">
+
+        </section>
     </main>
 
     <footer>
