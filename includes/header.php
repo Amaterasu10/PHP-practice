@@ -1,5 +1,5 @@
-<i class="fas fa-bars"></i>
-<h1>Online Gallery</h1>
+<div id="bar"><i  class="fas fa-bars" ></i></div>
+<h1 >Online Gallery</h1>
 
 <nav>
     <ul>

@@ -15,7 +15,7 @@ header {
 header .svg-inline--fa {
   font-size: 32px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 header h1 {
@@ -35,5 +35,69 @@ header nav ul {
 
 header nav ul li {
   margin: 0 14px;
+}
+
+.side-bar {
+  width: 0;
+  height: 100vh;
+  background-color: #181818;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.side-bar .svg-inline--fa {
+  font-size: 32px;
+  padding-left: 15px;
+  padding-right: 29px;
+  color: #ffffff;
+}
+
+.side-bar h1 {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#vertical-rectangle {
+  width: 58px;
+  height: 100vh;
+  background-color: #262626;
+}
+
+#aligner-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #181818;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  background: transparent;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 7px;
+  padding-left: 2px;
+}
+
+.side-bar-enlarge {
+  width: 100vw;
+}
+
+@media (min-width: 700px) {
+  .side-bar-enlarge {
+    width: 295px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
