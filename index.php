@@ -10,18 +10,25 @@
     </header>
     
     <main>
+    
         <section class = "gallery">
 
         </section>
 
         <div id = "side-bar" class= "side-bar">
-            <div id = "vertical-rectangle"></div>
             <div id = "aligner-wrapper">
                 <div id="container"> 
                     <div id = "cross">
                         <i class="fas fa-times"></i>
                     </div>
                     <h1>Online Gallery</h1>
+                </div>
+                <div class ="side-bar-list">
+                    <ul>
+                        <li><h3></h3></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </div>

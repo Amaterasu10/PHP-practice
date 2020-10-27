@@ -24,6 +24,9 @@ header h1 {
 
 header nav {
   display: none;
+  margin-left: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 header nav ul {
@@ -37,6 +40,11 @@ header nav ul li {
   margin: 0 14px;
 }
 
+header nav ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .side-bar {
   width: 0;
   height: 100vh;
@@ -47,6 +55,8 @@ header nav ul li {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
   font-family: "Roboto", sans-serif;
 }
 
@@ -60,6 +70,15 @@ header nav ul li {
 .side-bar h1 {
   font-weight: 400;
   color: #ffffff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#cross {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #vertical-rectangle {
@@ -95,9 +114,22 @@ header nav ul li {
   width: 100vw;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 @media (min-width: 700px) {
   .side-bar-enlarge {
     width: 295px;
+  }
+  header {
+    width: 98%;
+  }
+  header nav {
+    display: block;
+  }
+  header a {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,6 +17,8 @@ header {
 
   nav {
     display: none;
+    margin-left: auto;
+    align-self: flex-end;
 
     ul {
       display: flex;
@@ -24,6 +26,11 @@ header {
 
       li {
         margin: 0 14px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
       }
     }
   }
