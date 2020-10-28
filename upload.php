@@ -1,23 +1,31 @@
 <form action="upload.php" method = "post">
     Post: <input type="text" name = "text">
-    <input type="submit">
+    <input type="submit" name = "submit" value ="submit">
+    <input type="submit" name = "delete" value ="delete">
 </form>
 
 
 <h1>
-    <?php 
-        $myfile = fopen("comments/new open.txt", "r") or die("Unable to open file!");
-        echo fread($myfile,filesize("comments/new open.txt"));
-
-        if(isset($_POST["text"])){
+    <?php
+        $filepath ="comments/new open.txt";
+        if(!empty($_POST["text"])){
             $text = $_POST["text"];
         }
         if(isset($text)){
-            $myfile = fopen("comments/new open.txt", "w") or die("Unable to open file!");
-            fwrite($myfile,"<br>".$text);
+            $handle = fopen($filepath, "a+") or die("Unable to open file!");
+            fwrite($handle,"\r $text <br>");
+            echo fread($handle,filesize("$filepath"));
+            fclose($handle);
         }
-        echo fread($myfile,filesize("comments/new open.txt"));
-        fclose($myfile);
+
+        if(isset($_POST["delete"])){
+            $handle = fopen($filepath, "w") or die("Unable to open file!");
+        }
+        
+        if ( 0 !== filesize($filepath) ){
+            $handle = fopen($filepath, "r") or die("Unable to open file!");
+            echo fread($handle,filesize($filepath));
+        }
         
     ?> 
 </h1>
